@@ -4,10 +4,10 @@ This is our website for our ficticial company named Logic Design.
 ###     Wireframe
 
 *index.html*
-![WireframeHomePage](https://github.com/Zaidanxp/logic_design_site/assets/148430207/47609561-ccc4-4a09-871d-91989f273d21)
+![WireframeHome](https://github.com/Zaidanxp/logic_design_site/assets/148430207/ee66e6b7-718c-4385-a010-1eb6ee8c4566)
 
 *contact.html*
-![WireframeContantPage](https://github.com/Zaidanxp/logic_design_site/assets/148430207/723731de-27eb-4746-94e4-a4ff2fe5eeea)
+![WireframeContant](https://github.com/Zaidanxp/logic_design_site/assets/148430207/9f19f1a9-8237-4c5d-8aaf-1ff41d039037)
 
 ###     Design
 
