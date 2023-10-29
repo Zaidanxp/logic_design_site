@@ -1,0 +1,105 @@
+
+/*IMPORTAR LA FUENTE ROBOTO*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('/resources/fonts/Roboto-Regular.ttf') format('truetype'),
+        url('/resources/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*QUITARLE LOS MÁRGENES A TODOS LOS ELEMENTOS DE LA PÁGINA*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*ESTRUCTURAR EN EL CENTRO TODOS LOS ELEMENTOS DEL BODY, PONER EL FONDO DE ATRÁS NEGRO Y LA FUENTE ROBOTO*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Roboto";
+    background-color: black;
+    width: 100vw;
+
+}
+/*TAMAÑO DEL VIDEO*/
+#videopublicitario {
+    width: 85%;
+}
+/*POSICIÓN,TAMAÑO Y ESTILO DEL TÍTULO FRONTAL DEL VIDEO*/
+#fondotitulo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 364px;
+    left: 158px;
+    width: 722px;
+    height: 213px;
+    text-align: start;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#fondotitulo h1{
+    font-size: 55px;
+}
+/*TAMAÑO DEL CONTENEDOR DE LOS ARTÍCULOS*/
+#seccion1 {
+    width: 85%;
+}
+/*TAMAÑO Y DISPOSICIÓN DE CADA UNO DE LOS ARTÍCULOS*/
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    min-height: 600px;
+
+}
+/*TAMAÓ DE LAS IMÁGENES DE LOS ARTÍCULOS*/
+.caracteristicas img{
+    width: 50%;
+}
+/*TAMAÑO DE LOS PÁRRAFOS Y DISPOSICIÓN*/
+.texto{
+    width: 50%;
+    text-align: justify;
+    padding: 70px;
+}
+/*TAMAÑO DEL TEXTO*/
+.caracteristicas p {
+    font-size: 24px;
+}
+/*TAMAÑO DE LOS TÍTULOS DE LOS TEXTOS*/
+.caracteristicas h2{
+    font-size: 28px;
+}
+/*COLOR DE LAS PALABRAS EN NEGRITA DENTRO DE LOS PÁRRAFOS*/
+.caracteristicas p b {
+    color: #449BAC;
+}
+/*FONDOS CLAROS*/
+.claro {
+    background-color: white;
+}
+/*FONDOS OSCUROS*/
+.oscuro {
+    background-color: black;
+    color: white;
+}
+/*MÁRGENES A LA IZQUIERDA DE LAS IMÁGENES EN LOS FONDOS CLAROS*/
+.claro img {
+    margin-left: 80px;
+}
+/*MÁRGENES A LA IZQUIERDA DE LAS IMÁGENES EN LOS FONDOS OSCUROS*/
+.oscuro img{
+    margin-right: 80px;
+}
+/*LA PRIMERA IMAGEN DE LOS FONDOS CLAROS TIENE FONDO BLANCO, POR LO QUE HAY QUE APLICAR MENOSM MARGEN EN ESA CONCRETAMENTE PARA DAR SENSACIÓN DE ALINEACIÓN*/
+#imagenconbordeblanco{
+    margin: 0px;
+}
