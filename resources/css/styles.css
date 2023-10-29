@@ -25,6 +25,38 @@ body {
     width: 100vw;
 
 }
+/*COLOR DE FONDO Y TAMAÑO DEL HEADER*/
+header{
+    background-color: #DDE8EE;
+    width: 85%;
+}
+/*AJUSTES DEL LOGO, EL TAMAÑO ORIGINAL ES 99X88*/
+#logo{
+    width: 59.5px;
+    height: 52.8px;
+}
+/*ESTO SE USA PARA PREPARAR EL CENTRADO DE LOS ENLACES DEL HEADER*/
+header nav #contenedorCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/*ESTO SE UTILIZA PARA CENTRAR LOS ENLACES EN EL HEADER*/
+header nav a{
+    text-decoration: none;
+    margin: 0 7%;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*ESTO ES PARA LOS ENLACES VISITADOS Y NO VISITADOS*/
+a:link, a:visited{
+    color: #000000;
+}
+/*ESTO ES PARA LOS ENLACES CUANDO LE PASAS EL CURSOR POR ENCIMA*/
+a:hover, a:active{
+    color: #449BAC;
+}
 /*TAMAÑO DEL VIDEO*/
 #videopublicitario {
     width: 85%;
