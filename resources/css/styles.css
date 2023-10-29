@@ -25,38 +25,6 @@ body {
     width: 100vw;
 
 }
-/*COLOR DE FONDO Y TAMAÑO DEL HEADER*/
-header{
-    background-color: #DDE8EE;
-    width: 85%;
-}
-/*AJUSTES DEL LOGO, EL TAMAÑO ORIGINAL ES 99X88*/
-#logo{
-    width: 59.5px;
-    height: 52.8px;
-}
-/*ESTO SE USA PARA PREPARAR EL CENTRADO DE LOS ENLACES DEL HEADER*/
-header nav #contenedorCentrado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-/*ESTO SE UTILIZA PARA CENTRAR LOS ENLACES EN EL HEADER*/
-header nav a{
-    text-decoration: none;
-    margin: 0 7%;
-    font-weight: bold;
-    font-size: 18px;
-}
-/*ESTO ES PARA LOS ENLACES VISITADOS Y NO VISITADOS*/
-a:link, a:visited{
-    color: #000000;
-}
-/*ESTO ES PARA LOS ENLACES CUANDO LE PASAS EL CURSOR POR ENCIMA*/
-a:hover, a:active{
-    color: #449BAC;
-}
 /*TAMAÑO DEL VIDEO*/
 #videopublicitario {
     width: 85%;
@@ -134,4 +102,103 @@ a:hover, a:active{
 /*LA PRIMERA IMAGEN DE LOS FONDOS CLAROS TIENE FONDO BLANCO, POR LO QUE HAY QUE APLICAR MENOSM MARGEN EN ESA CONCRETAMENTE PARA DAR SENSACIÓN DE ALINEACIÓN*/
 #imagenconbordeblanco{
     margin: 0px;
+}
+/*AJUSTES DEL LOGO, EL TAMAÑO ORIGINAL ES 99X88*/
+#logo{
+    width: 59.5px;
+    height: 52.8px;
+}
+/*COLOR DE FONDO Y TAMAÑO DEL HEADER*/
+header#home{
+    background-color: #DDE8EE;
+    width: 85%;
+}
+/*HEADER DEL FORMULARIO DE CONTACTO*/
+header#contacto{
+    background-color: #DDE8EE;
+    width: 78.3%;
+}
+/*ESTO SE USA PARA PREPARAR EL CENTRADO DE LOS ENLACES DEL HEADER*/
+header nav #contenedorCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/*ESTO SE UTILIZA PARA CENTRAR LOS ENLACES EN EL HEADER*/
+header nav a{
+    text-decoration: none;
+    margin: 0 7%;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*ESTO ES PARA LOS ENLACES VISITADOS Y NO VISITADOS*/
+a:link, a:visited{
+    color: #000000;
+}
+/*ESTO ES PARA LOS ENLACES CUANDO LE PASAS EL CURSOR POR ENCIMA*/
+a:hover, a:active{
+    color: #449BAC;
+}
+/**/
+form{
+    background-image: url(../images/form/contacto.png);
+    width: 1680px;
+    height: 928px;
+    text-align: left;
+}
+form .datosContacto, form h1, form p{
+    padding-left: 10%;
+}
+/**/
+form h1{
+    color: #449BAC;
+    font-size: 300%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+/**/
+form label, form p{
+    color: #FFFFFF;
+    font-size: 150%;
+}
+form p{
+    text-align: left;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+#elecciones{
+    padding-left: 10%;
+}
+#elecciones label{
+    padding-right: 2%;
+}
+form br{
+    margin: 2%;
+}
+.datosContacto{
+    margin-right: 10%;
+}
+input[type="text"]{
+    width: 27%;
+    height: 4%;
+}
+form #nombre{
+    margin-left: 9.2%;
+}
+form #email{
+    margin-left: 10.7%;
+}
+form #mensaje{
+    margin-left: 8.7%;
+}
+input[type="reset"], input[type="submit"]{
+    float: right;
+    color: #FFFFFF;
+    background-color: #449BAC;
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 3%;
+    margin-top: 3%;
 }
