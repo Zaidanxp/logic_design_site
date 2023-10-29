@@ -140,49 +140,56 @@ a:link, a:visited{
 a:hover, a:active{
     color: #449BAC;
 }
-/**/
+/*PARA HACER LA BASE DEL FONDO DEL FORMULARIO*/
 form{
     background-image: url(../images/form/contacto.png);
     width: 1680px;
     height: 928px;
     text-align: left;
 }
+/*PARA DARLE UN PADDING INICIAL A TODOS LOS DATOS DEL FORMULARIO*/
 form .datosContacto, form h1, form p{
     padding-left: 10%;
 }
-/**/
+/*PARA CAMBIAR EL COLOR Y OTRAS COSAS DEL TITULO DEL FORMULARIO*/
 form h1{
     color: #449BAC;
     font-size: 300%;
     padding-top: 7%;
     padding-bottom: 3%;
 }
-/**/
+/*PARA DARLE COLOR Y TAMAÑO AL PARRAFO Y LAS ETIQUETAS DEL FORMULARIO*/
 form label, form p{
     color: #FFFFFF;
     font-size: 150%;
 }
+/*PARA CAMBIAR*/
 form p{
-    text-align: left;
     padding-bottom: 1%;
     padding-top: 4%;
 }
+/*PARA LA ZONA DE LA ELECCION DE SI ES UNA PAGINA PERSONAL U OTRA*/
 #elecciones{
     padding-left: 10%;
 }
+/*PARA LAS ETIQUETAS DE LA ZONA ELECCIONES*/
 #elecciones label{
     padding-right: 2%;
 }
+/*PARA MODIFICAR LOS BR DEL FORMULARIO Y HACERLOS MAS ALTOS*/
 form br{
     margin: 2%;
 }
+/*PARA MODIFICAR LAS ETIQUETAS CON LA CLASE DATOSCONTACTO*/
 .datosContacto{
     margin-right: 10%;
 }
+/*PARA MODIFICAR LOS INPUT DE TIPO TEXTO*/
 input[type="text"]{
     width: 27%;
     height: 4%;
 }
+/*PARA ESTA ZONA, SE HACEN DIFERENTES MARGIN PARA QUE TODOS LOS CUADROS DE TEXTO QUEDEN ALINEADOS*/
 form #nombre{
     margin-left: 9.2%;
 }
@@ -192,6 +199,7 @@ form #email{
 form #mensaje{
     margin-left: 8.7%;
 }
+/*PARA LOS BOTONES DEL FINAL, QUE ESTEN A LA DERECHA*/
 input[type="reset"], input[type="submit"]{
     float: right;
     color: #FFFFFF;
