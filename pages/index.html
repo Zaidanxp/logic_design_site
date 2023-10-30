@@ -1,18 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../resources/css/index.css">
         <title>LogicDesign</title>
+        <link rel="stylesheet" href="../resources/css/styles.css">;
     </head>
 
     <body>
+        <!--ENCABEZADO-->
+        <header id="home">
+            <!--MENÚ-->
+            <nav>
+                <!-- CONTENEDOR PARA CENTRAR EL HEADER-->
+                <div id="contenedorCentrado">
+                    <a class="enlacesHeader" id="enlaceHomeLogo" href="./index.html">
+                        <img id="logo" src="../resources/images/header/logicdesign.png" alt="Logo de LogicDesign">
+                    </a>
+                    <a class="enlacesHeader" id="enlaceHome" href="./index.html">Home</a>
+                    <a class="enlacesHeader" id="enlaceProyectos" href="#proyectos">Proyectos</a>
+                    <a class="enlacesHeader" id="enlaceContacto" href="contact.html">Contacto</a> 
+                </div>   
+            </nav>
+
+        </header>
+
+        <!--CONTENIDO-->
+
+        <!--VIDEO PRINCIPAL-->
+        <section id="section0">
+
+            <div id="fondotitulo">
+                <h1>DISEÑANDO EL FUTURO, INSPIRANDO EL PRESENTE</h1>
+            </div>
+            
+
+            <video id="videopublicitario" src="../resources/videos/LOGIC.mp4" alt="Video publicitario"
+                poster="../resources/images/homPageImages/firstImage.png" controls>
+
+
+        </section>
+
+        <!--SECCIONES CON CARACTERÍSTICAS DE LA EMPRESA-->
+        <section id="seccion1">
+
+            <!--PRIMERA CARACTERÍSTICA-->
+            <article class="caracteristicas claro">
+
+                <img id="imagenconbordeblanco" src="../resources/images/homPageImages/Acuerdo.png"
+                    alt="Imagen de flexibilidad y personalización">
+
+                <div class="texto">
+
+                    <h2>Flexibilidad y personalización</h2>
+
+                    <br>
+
+                    <p>En <b>LogicDesign</b>, la flexibilidad y la personalización son esenciales en cada proyecto que
+                        emprendemos.
+                        Entendemos que cada cliente es único, y adaptamos nuestras soluciones web para satisfacer sus
+                        necesidades específicas.
+                        <br><br>
+                        Trabajamos en estrecha colaboración contigo para asegurarnos de que tu visión se convierta en una
+                        realidad digital única. Nuestra flexibilidad nos permite ajustarnos a los cambios y actualizaciones
+                        a lo
+                        largo del ciclo de vida de tu aplicación web, garantizando que siempre estés en control y satisfecho
+                        con
+                        los resultados
+                    </p>
+
+                </div>
+
+            </article>
+            <!--SEGUNDA CARACTERÍSTICA-->
+            <article class="caracteristicas oscuro">
+
+                <div class="texto">
+
+                    <h2>Calidad y seguridad</h2>
+
+                    <br>
+
+                    <p>En <b>LogicDesign</b>, la calidad y la seguridad son nuestra máxima prioridad. Nos esforzamos por
+                        desarrollar aplicaciones web de alta calidad y confiables, sometiendo cada aspecto a pruebas
+                        exhaustivas. Además, implementamos medidas de seguridad avanzadas para proteger la información de
+                        nuestros clientes y usuarios. Puedes confiar en nosotros para ofrecer soluciones web seguras y sin
+                        errores.
+                    </p>
+
+                </div>
+
+                <img src="../resources/images/homPageImages/computer-1873831_960_720.png"
+                    alt="Imagen de flexibilidad y personalización">
+
+            </article>
+
+            <!--TERCERA CARACTERÍSTICA-->
+            <article class="caracteristicas claro">
+
+                <img src="../resources/images/homPageImages/system-63768_1280.jpg"
+                    alt="Imagen de flexibilidad y personalización">
+
+                <div class="texto">
+
+                    <h2>Enfoque en la experiencia de usuario</h2>
+
+                    <br>
+
+                    <p>En <b>LogicDesign</b> ponemos un fuerte énfasis en la experiencia del usuario (UX). Cada proyecto que
+                        abordamos se inicia con una cuidadosa consideración de cómo los usuarios interactuarán con la
+                        aplicación web que creamos.
+                        <br> <br>
+                        Nos esforzamos por hacer que cada experiencia en línea sea intuitiva, atractiva y eficiente. Nuestro
+                        equipo de diseñadores y desarrolladores trabaja en estrecha colaboración para garantizar que tus
+                        usuarios disfruten de una navegación sin problemas y una interacción excepcional con tu aplicación.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!--CUARTA CARACTERÍSTICA-->
+            <article class="caracteristicas oscuro">
+
+                <div class="texto">
+
+                    <h2>Atención al cliente y colaboración</h2>
+
+                    <br>
+
+                    <p>En <b>LogicDesign</b>, nos importa tu satisfacción y trabajamos de cerca contigo.
+                        Estamos aquí para escuchar tus necesidades y colaborar en cada paso del camino. Desde la
+                        planificación hasta la implementación y más allá, estamos comprometidos a hacer tu visión realidad y
+                        asegurarnos de que estés satisfecho con cada aspecto de tu proyecto web
+                    </p>
+
+                </div>
+
+                <img src="../resources/images/homPageImages/technicalSupports.png"
+                    alt="Imagen de flexibilidad y personalización">
+
+            </article>
+
+        </section>
 
         <!-- PROYECTOS REALIZADOS -->
 
-        <section id="proyectosRealizados">
+        <section class="proyectosRealizados claro">
             <h3>PROYECTOS REALIZADOS</h3>
             <p>Estos son alunos ejemplos destacados de las pagínas webs realizadas por LogicDesign a lo largo de <br>nuestra trayectoria.
             </p>
@@ -29,7 +163,8 @@
                 </tr>
             </table>
         </section>
-        
+            
+        <!-- FOOTER -->
         <footer>
             <div class="first-child-footer">
                 <img id="logoFooter" src="../resources/images/logoPaginaWeb.svg" width="88" height="88">
@@ -80,5 +215,21 @@
                 </div>
             </div>
         </footer>
+
+        <!--SCRIPT PARA OCULTAR EL TÍTULO PRINCIPAL AL DARLE PLAY AL VIDEO y PARA RESTAURAR TODO AL FINALIZAR EL VIDEO-->
+        <script>
+            let textotitulo = document.getElementById("fondotitulo");
+            let miVideo = document.getElementById("videopublicitario");
+        
+            miVideo.addEventListener('play', function() {
+                textotitulo.style.display = "none";
+            });
+
+            miVideo.addEventListener('ended', function() {
+                textotitulo.style.display = "block";
+                miVideo.load();
+            });
+
+        </script>
     </body>
 </html>

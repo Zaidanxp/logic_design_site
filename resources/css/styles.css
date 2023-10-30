@@ -1,0 +1,287 @@
+/*IMPORTAR LA FUENTE ROBOTO*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('/resources/fonts/Roboto-Regular.ttf') format('truetype'),
+        url('/resources/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*QUITARLE LOS MÁRGENES A TODOS LOS ELEMENTOS DE LA PÁGINA*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*ESTRUCTURAR EN EL CENTRO TODOS LOS ELEMENTOS DEL BODY, PONER EL FONDO DE ATRÁS NEGRO Y LA FUENTE ROBOTO*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Roboto";
+    background-color: black;
+    width: 100vw;
+
+}
+/*TAMAÑO DEL VIDEO*/
+#videopublicitario {
+    width: 85%;
+}
+/*POSICIÓN,TAMAÑO Y ESTILO DEL TÍTULO FRONTAL DEL VIDEO*/
+#fondotitulo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 364px;
+    left: 158px;
+    width: 722px;
+    height: 213px;
+    text-align: start;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#fondotitulo h1{
+    font-size: 55px;
+}
+/*TAMAÑO DEL CONTENEDOR DE LOS ARTÍCULOS*/
+#seccion1 {
+    width: 85%;
+}
+/*TAMAÑO Y DISPOSICIÓN DE CADA UNO DE LOS ARTÍCULOS*/
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    min-height: 600px;
+
+}
+/*TAMAÓ DE LAS IMÁGENES DE LOS ARTÍCULOS*/
+.caracteristicas img{
+    width: 50%;
+}
+/*TAMAÑO DE LOS PÁRRAFOS Y DISPOSICIÓN*/
+.texto{
+    width: 50%;
+    text-align: justify;
+    padding: 70px;
+}
+/*TAMAÑO DEL TEXTO*/
+.caracteristicas p {
+    font-size: 24px;
+}
+/*TAMAÑO DE LOS TÍTULOS DE LOS TEXTOS*/
+.caracteristicas h2{
+    font-size: 28px;
+}
+/*COLOR DE LAS PALABRAS EN NEGRITA DENTRO DE LOS PÁRRAFOS*/
+.caracteristicas p b {
+    color: #449BAC;
+}
+/*FONDOS CLAROS*/
+.claro {
+    background-color: white;
+}
+/*FONDOS OSCUROS*/
+.oscuro {
+    background-color: black;
+    color: white;
+}
+/*MÁRGENES A LA IZQUIERDA DE LAS IMÁGENES EN LOS FONDOS CLAROS*/
+.claro img {
+    margin-left: 80px;
+}
+/*MÁRGENES A LA IZQUIERDA DE LAS IMÁGENES EN LOS FONDOS OSCUROS*/
+.oscuro img{
+    margin-right: 80px;
+}
+/*LA PRIMERA IMAGEN DE LOS FONDOS CLAROS TIENE FONDO BLANCO, POR LO QUE HAY QUE APLICAR MENOSM MARGEN EN ESA CONCRETAMENTE PARA DAR SENSACIÓN DE ALINEACIÓN*/
+#imagenconbordeblanco{
+    margin: 0px;
+}
+/*AJUSTES DEL LOGO, EL TAMAÑO ORIGINAL ES 99X88*/
+#logo{
+    width: 59.5px;
+    height: 52.8px;
+}
+/*COLOR DE FONDO Y TAMAÑO DEL HEADER*/
+header#home{
+    background-color: #DDE8EE;
+    width: 85%;
+}
+/*HEADER DEL FORMULARIO DE CONTACTO*/
+header#contacto{
+    background-color: #DDE8EE;
+    width: 78.3%;
+}
+/*ESTO SE USA PARA PREPARAR EL CENTRADO DE LOS ENLACES DEL HEADER*/
+header nav #contenedorCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/*ESTO SE UTILIZA PARA CENTRAR LOS ENLACES EN EL HEADER*/
+header nav a{
+    text-decoration: none;
+    margin: 0 7%;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*ESTO ES PARA LOS ENLACES VISITADOS Y NO VISITADOS*/
+a:link, a:visited{
+    color: #000000;
+}
+/*ESTO ES PARA LOS ENLACES CUANDO LE PASAS EL CURSOR POR ENCIMA*/
+a:hover, a:active{
+    color: #449BAC;
+}
+/*PARA HACER LA BASE DEL FONDO DEL FORMULARIO*/
+form{
+    background-image: url(../images/form/contacto.png);
+    width: 1680px;
+    height: 928px;
+    text-align: left;
+}
+/*PARA DARLE UN PADDING INICIAL A TODOS LOS DATOS DEL FORMULARIO*/
+form .datosContacto, form h1, form p{
+    padding-left: 10%;
+}
+/*PARA CAMBIAR EL COLOR Y OTRAS COSAS DEL TITULO DEL FORMULARIO*/
+form h1{
+    color: #449BAC;
+    font-size: 300%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+/*PARA DARLE COLOR Y TAMAÑO AL PARRAFO Y LAS ETIQUETAS DEL FORMULARIO*/
+form label, form p{
+    color: #FFFFFF;
+    font-size: 150%;
+}
+/*PARA CAMBIAR*/
+form p{
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+/*PARA LA ZONA DE LA ELECCION DE SI ES UNA PAGINA PERSONAL U OTRA*/
+#elecciones{
+    padding-left: 10%;
+}
+/*PARA LAS ETIQUETAS DE LA ZONA ELECCIONES*/
+#elecciones label{
+    padding-right: 2%;
+}
+/*PARA MODIFICAR LOS BR DEL FORMULARIO Y HACERLOS MAS ALTOS*/
+form br{
+    margin: 2%;
+}
+/*PARA MODIFICAR LAS ETIQUETAS CON LA CLASE DATOSCONTACTO*/
+.datosContacto{
+    margin-right: 10%;
+}
+/*PARA MODIFICAR LOS INPUT DE TIPO TEXTO*/
+input[type="text"]{
+    width: 27%;
+    height: 4%;
+}
+/*PARA ESTA ZONA, SE HACEN DIFERENTES MARGIN PARA QUE TODOS LOS CUADROS DE TEXTO QUEDEN ALINEADOS*/
+form #nombre{
+    margin-left: 9.2%;
+}
+form #email{
+    margin-left: 10.7%;
+}
+form #mensaje{
+    margin-left: 8.7%;
+}
+/*PARA LOS BOTONES DEL FINAL, QUE ESTEN A LA DERECHA*/
+input[type="reset"], input[type="submit"]{
+    float: right;
+    color: #FFFFFF;
+    background-color: #449BAC;
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+/** PROYECTOS REALIZADOS **/
+.proyectosRealizados{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    width: 85.5%;
+    min-height: 600px;
+}
+
+.proyectosRealizados>h3{
+    font-size: 40px;
+}
+
+.proyectosRealizados>p{
+    font-size: 20px;
+}
+
+td{
+    padding-bottom: 75px;
+}
+
+
+/** FOOTER **/
+
+footer{
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 20px;
+    background-color: #8f8d8d;
+}
+
+#logoFooter{
+    float: left;
+}
+
+hr{
+    margin-left: 100px;
+}
+
+.marks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.dataInfo-child-footer{
+    display: flex;
+}
+
+.dataContact {
+    color: white;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.iframe_footer_page{
+    margin-top: 20px;
+}
+
+.last-child-footer p{
+    color: white;
+    float: left;
+}
+
+.plathaforms{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
