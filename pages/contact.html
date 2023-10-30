@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LogicDesign</title>
+        <link rel="stylesheet" href="../resources/css/styles.css">;
+    </head>
+
+    <body>
+        <!--ENCABEZADO-->
+
+        <header id="contacto">
+
+            <!--MENÚ-->
+            <nav>
+
+                <!-- CONTENEDOR PARA CENTRAR EL HEADER-->
+                <div id="contenedorCentrado">
+
+                    <a class="enlacesHeader" id="enlaceHomeLogo" href="./index.html">
+                        <img id="logo" src="../resources/images/header/logicdesign.png" alt="Logo de LogicDesign">
+                    </a>
+                    <a class="enlacesHeader" id="enlaceHome" href="./index.html">Home</a>
+                    <a class="enlacesHeader" id="enlaceProyectos" href="./index.html#proyectos">Proyectos</a>
+                    <a class="enlacesHeader" id="enlaceContacto" href="contact.html">Contacto</a> 
+                </div> 
+
+            </nav>
+            
+        </header>
+
+    <!--SECCION DEL FORMULARIO-->
+        <main>
+            <!--FORMULARIO-->
+                <form action="mailto:logicdesigncartagena@gmail.com" method="post" enctype="text/plain">
+                    <h1>CONTACTA CON NOSOTROS</h1>
+                    <label class="datosContacto" for="empresa">Nombre de la empresa</label>
+                    <input type="text" name="empresa" id="empresa">
+
+                    <br>
+
+                    <label class="datosContacto" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <br>
+
+                    <label class="datosContacto" for="email">Email</label>
+                    <input type="text" name="email" id="email">
+
+                    <br>
+
+                    <label class="datosContacto" for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="56" rows="4"></textarea>
+
+                    <div id="tipoPagina">
+                        <p>Tipo de página</p>
+                        
+                        <div id="elecciones">
+                            <input type="radio" name="tipo" id="personal">
+                            <label for="personal">Sitio Web Personal</label>
+                            
+                            <input type="radio" name="tipo" id="corporativo">
+                            <label for="corporativo">Sitio Web Corporativo</label>
+                            
+                            <input type="radio" name="tipo" id="blog">
+                            <label for="blog">Blog</label>
+                        </div>
+                    </div>
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </form>
+        </main>
+
+    </body>
+</html>
