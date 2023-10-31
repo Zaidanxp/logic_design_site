@@ -169,26 +169,40 @@ a:active {
 }
 
 /*PARA HACER LA BASE DEL FONDO DEL FORMULARIO*/
-form {
+#seccionFormulario{
     background-image: url(../images/form/contacto.png);
     width: 85%;
     height: 928px;
     text-align: left;
 }
 
-/*PARA DARLE UN PADDING INICIAL A TODOS LOS DATOS DEL FORMULARIO*/
-form .datosContacto,
-form h1,
-form p {
+form #datosContactoSeccion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    width: 50%;
     padding-left: 10%;
 }
 
+form #datosContactoSeccion1 label{
+    text-align: left;
+    margin-right: 15%;
+}
+
+form #datosContactoSeccion2{
+    padding-left: 10%;
+}
+#datosContactoSeccion2 p, #datosContactoSeccion1 label{
+    font-size: 30px;
+}
+
 /*PARA CAMBIAR EL COLOR Y OTRAS COSAS DEL TITULO DEL FORMULARIO*/
-form h1 {
+#seccionFormulario h1 {
     color: #449BAC;
     font-size: 300%;
     padding-top: 7%;
     padding-bottom: 3%;
+    padding-left: 5%;
 }
 
 /*PARA DARLE COLOR Y TAMAÑO AL PARRAFO Y LAS ETIQUETAS DEL FORMULARIO*/
@@ -202,52 +216,21 @@ form p,input[type="file"] {
 form p,input[type="file"] {
     padding-bottom: 1%;
     padding-top: 4%;
-}
+}/*
 input[type="file"]{
    width: 100%;
    padding-left: 120px;
-}
-
-/*PARA LA ZONA DE LA ELECCION DE SI ES UNA PAGINA PERSONAL U OTRA*/
-#elecciones {
-    padding-left: 10%;
-}
-
-/*PARA LAS ETIQUETAS DE LA ZONA ELECCIONES*/
-#elecciones label {
-    padding-right: 2%;
-}
-
-/*PARA MODIFICAR LOS BR DEL FORMULARIO Y HACERLOS MAS ALTOS*/
-form br {
-    margin: 2%;
-}
-
-/*PARA MODIFICAR LAS ETIQUETAS CON LA CLASE DATOSCONTACTO*/
-.datosContacto {
-    margin-right: 10%;
-}
+}*/
 
 /*PARA MODIFICAR LOS INPUT DE TIPO TEXTO*/
-input[type="text"]{
-    width: 27%;
-    height: 4%;
+#seccionFormulario input[type="text"], #seccionFormulario textarea{
+    width: 200%;
+    padding: 5px;
+    font-size: 16px;
 }
 
-/*PARA ESTA ZONA, SE HACEN DIFERENTES MARGIN PARA QUE TODOS LOS CUADROS DE TEXTO QUEDEN ALINEADOS*/
-form #nombre {
-    margin-left: 136px;
-}
-
-
-form #email {
-    margin-left: 157px;
-    margin-bottom: 40px;
-}
-
-form #mensaje {
-    margin-left: 133px;
-    width: 441px;
+#seccionFichero{
+    padding-top: 3%;
 }
 
 /*PARA LOS BOTONES DEL FINAL, QUE ESTEN A LA DERECHA*/
