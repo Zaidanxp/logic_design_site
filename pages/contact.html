@@ -34,49 +34,54 @@
     <!--SECCION DEL FORMULARIO-->
        
             <!--FORMULARIO-->
-                <form action="mailto:logicdesigncartagena@gmail.com" method="post" enctype="text/plain">
-
+                <div id="seccionFormulario">
                     <h1>CONTACTA CON NOSOTROS</h1>
-
-                    <label class="datosContacto" for="empresa">Nombre de la empresa</label>
-                    <input type="text" name="empresa" id="empresa">
-
-                    <br>
-
-                    <label class="datosContacto" for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-
-                    <br>
-
-                    <label class="datosContacto" for="email">Email</label>
-                    <input type="text" name="email" id="email">
-
-                    <br>
-
-                    <label class="datosContacto" for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="56" rows="4"></textarea>
-
-                    <div id="tipoPagina">
-                        <p>Tipo de página</p>
+                    <form action="mailto:logicdesigncartagena@gmail.com" method="post" enctype="text/plain">
+                    
+                        <div id="datosContactoSeccion1">
+                            <label for="empresa">Nombre de la empresa</label>
+                            <input type="text" name="empresa" id="empresa">
+                                              
+                            
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                                                                                            
+                            
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                            
+                            
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="60" rows="4"></textarea>
+                        </div>
                         
-                        <div id="elecciones">
+                        <div id="datosContactoSeccion2">
+                            <p>Tipo de página</p>
+                            
+                        
                             <input type="radio" name="tipo" id="personal">
                             <label for="personal">Sitio Web Personal</label>
-                            
+                                
                             <input type="radio" name="tipo" id="corporativo">
                             <label for="corporativo">Sitio Web Corporativo</label>
-                            
+                                    
                             <input type="radio" name="tipo" id="blog">
                             <label for="blog">Blog</label>
+                            <br>
+                        
+                        
+                            
+                            <div id="seccionFichero">
+                                <label for="fichero">Documento de requisitos de la web(opcional)</label><br>
+                                <input id="fichero" name="fichero" type="file">
+                            </div>
                         </div>
-                    </div>
-
-                    <label for="fichero">Documento de requisitos de la web(opcional)</label>
-                    <input id="fichero" name="fichero" type="file">
-
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar">
-                </form>
+                        
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                        
+                    </form>
+                </div id="Seccion formulario"v>
           <!-- FOOTER -->
           <footer>
             <div class="first-child-footer">
