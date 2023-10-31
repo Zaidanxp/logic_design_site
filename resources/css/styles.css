@@ -209,7 +209,7 @@ form #datosContactoSeccion2{
 form label,
 form p,input[type="file"] {
     color: #FFFFFF;
-    font-size: 150%;
+    font-size: 30px;
 }
 
 /*PARA CAMBIAR*/
@@ -231,6 +231,12 @@ input[type="file"]{
 
 #seccionFichero{
     padding-top: 3%;
+}
+#fichero{
+    padding-top: 10px;
+}
+#mensaje{
+    resize: none;
 }
 
 /*PARA LOS BOTONES DEL FINAL, QUE ESTEN A LA DERECHA*/
@@ -259,7 +265,7 @@ input[type="submit"]:hover {
     align-items: center;
     background-color: white;
 
-    width: 85.5%;
+    width: 85%;
     min-height: 600px;
 }
 
@@ -279,25 +285,27 @@ td {
 /** FOOTER **/
 
 footer {
-    padding-top: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 20px;
+    width: 85%;
+    padding-top: 30px;
+    padding-bottom: 15px;
     background-color: #8f8d8d;
 }
 
 #logoFooter {
     float: left;
+    margin-left: 205px;
 }
 
 hr {
     margin-left: 100px;
+    margin-right: 207px;
 }
 
 .marks {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
     gap: 50px;
     margin-bottom: 10px;
 }
@@ -308,22 +316,35 @@ hr {
 
 .dataContact {
     color: white;
-    margin-right: auto;
+    margin-right: 88px;
     margin-top: 20px;
     text-align: start;
+    margin-left: 294px;
+}
+.dataContact p,h2{
+   margin-bottom: 20px;
 }
 
 .iframe_footer_page {
     margin-top: 20px;
 }
+.last-child-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 
-.last-child-footer p {
-    color: white;
-    float: left;
-}
-
-.plathaforms {
+  }
+  
+  .last-child-footer p {
+    color: white; 
+    margin: 0;
+    margin-left: 292px;
+    margin-right: 233px;
+  }
+  
+  .plathaforms {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
+    width: 500px; 
+  }
